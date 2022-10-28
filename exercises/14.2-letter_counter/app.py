@@ -2,6 +2,17 @@ par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bib
 
 counts = {}
 #your code go here:
+array=[]
+for i in par:
+    if i!=" ":
+        array.append(i.lower())
+array=set(array)
+for key in array:
+    cLetra=0
+    for i in par:
+        if i.lower()==key:
+            cLetra+=1
+    counts[key]=cLetra 
 
 print(counts)
 

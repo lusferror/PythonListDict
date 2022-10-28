@@ -9,7 +9,8 @@ tasks = [
 	{ "label": 'Read a book', "done": True },
 	{ "label": 'Make a trip', "done": False }
 ]
-
-
+def filtro(item):
+	return item["done"]!=False
+new_list= list(filter(filtro, tasks))
 #Your code go here:
-
+print(new_list)

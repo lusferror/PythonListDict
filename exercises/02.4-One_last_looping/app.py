@@ -1,3 +1,10 @@
-names = ['Esmeralda','Kiko','Ruth','Lebron','Pedro','Maria','Lou','Fernando','Cesco','Bart','Annie']
-
+names = ['Esmeralda','Kiko','Ruth','Lebron','Pedro','Maria','Lou','Fernando','Cesco','Bart']
 #Your code here:
+names[1]="Steven"
+
+names.append("Pepe")
+
+names[0]=names[2]+names[4]
+
+for i in range(len(names)-1,-1,-1):
+    print(names[i])
